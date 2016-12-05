@@ -1,16 +1,15 @@
 package example.wikipedia;
 
 import cucumber.api.CucumberOptions;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+
 import org.junit.runner.RunWith;
 
-import uk.gov.homeoffice.virtuoso.framework.bdd.IntegratedCucumber;
 
+@RunWith(CucumberWithSerenity.class)
+@CucumberOptions(
+		features = "src/test/resources/features/wikipedia/wikipedia.feature"
+		)
 
-    @RunWith(IntegratedCucumber.class)
-    @CucumberOptions(
-        features = "src/test/resources/features/wikipedia/wikipedia.feature",
-        format = {"pretty", "html:virtuoso-test-results/wikipedia", "json:virtuoso-test-results/wikipedia.json"}
-    )
-
-    public class RunWikipedia {
-    }
+public class RunWikipedia {
+}

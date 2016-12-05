@@ -8,7 +8,7 @@ import uk.gov.homeoffice.virtuoso.framework.element.PageElement;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
-// Test methods for Amazon search
+
 @DefaultUrl("http://www.amazon.co.uk")
 
 public class AmazonHomePage extends PageObject{
